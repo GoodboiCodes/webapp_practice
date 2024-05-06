@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <
+  <body
+    style="background-color: #eee; min-height: 100%"
+    ondragstart="return false;"
+    data-new-gr-c-s-check-loaded="14.1170.0"
+    data-gr-ext-installed=""
+  >
+    <!---->
+    <div
+      class="shadow-lg"
+      ng-view=""
+      style="
+        position: relative;
+        background-color: white;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        padding-top: 0px;
+        max-width: 1000px;
+        min-height: 100%;
+        overflow: hidden;
+      "
+    >
+      <!--
+<nav class="navbar navbar-dark bg-dark">
+<a class="navbar-brand" href="batstate-u.edu.ph">
+<img src="batsu_icon.png" width="30" height="30" alt="">
+Batangas State University
+</a>
+</nav>
+-->
+      <img src="assets/img/loginheader.png" style="width: 100%" />
+      <div style="padding: 0px">
+        <!---->
+        <div
+          class="card"
+          style="
+            margin-left: auto;
+            margin-right: auto;
+            min-height: 100%;
+            max-widthx: 500px;
+          "
+        >
+          <div class="card-header text-center">Student Portal Login</div>
+          <div class="card-body">
+            <div class="container-md" style="max-width: 600px">
+              <div class="row">
+                <div class="col">
+                  <!--
+                <div class="card border-lightx" style="border:1px solid #eee">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="far fa-info-circle align-middle fa-lg"></i>  For New Students</h5>
+                        <p class="card-text ">
+                                    <hr>
+                                    <ul class="list-unstyled">
+                                        
+                                        <li>
+                                            <div class="alert alert-warning" role="alert" style="border:0px">
+                                                Use the <span class="text-dangerx font-weight-bold">SR Code</span> as your username and default password will be <br><span class="text-dangerx font-weight-bold">SR Code</span> + <span class="text-dangerx font-weight-bold">first name initial</span> + <span class="text-dangerx font-weight-bold">last name initial</span>.  Click <span class="text-dangerx font-weight-bold">"Sign in"</span> button
+                                            </div>
+                                            
+                                    </ul>
+                                
+                            
+                        </p>
+                    </div>
+                </div>
+                --></div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div
+                    class="card border-successx"
+                    style="
+                      border: 1px solid #eee;
+                      margin-left: auto;
+                      margin-right: auto;
+                      margin-top: 10px;
+                    "
+                  >
+                    <div class="card-body">
+                      <h5 class="card-title">Please Login</h5>
+                      <hr />
+                      <form class="ng-pristine ng-invalid ng-invalid-recaptcha">
+                        <div class="form-group row">
+                          <!--<label for="txtUsername" class="col-sm-4 col-form-label">Username</label>-->
+                          <div class="col-sm-12">
+                            <input
+                              autocomplete="off"
+                              ng-model="$root.login.credentials.username"
+                              type="text"
+                              class="form-control form-control-sm auth ng-pristine ng-untouched ng-valid ng-empty"
+                              id="txtUsername"
+                              placeholder="Username"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <!--<label for="txtPassword" class="col-sm-4 col-form-label">Password</label>-->
+                          <div class="col-sm-12">
+                            <!--
+                                    <input autocomplete="new-password"  ng-model="$root.login.credentials.password" type="password" class="form-control form-control-sm auth" id="txtPassword" placeholder="Password">
+                                    -->
+                            <div class="input-group mb-3">
+                              <input
+                                autocomplete="new-password"
+                                ng-model="$root.login.credentials.password"
+                                type="password"
+                                class="form-control form-control-sm auth ng-pristine ng-untouched ng-valid ng-empty"
+                                placeholder="Password"
+                                aria-label="password"
+                                aria-describedby="button-addon2"
+                              />
+                              <div class="input-group-append">
+                                <button
+                                  ng-click="show_password()"
+                                  style="border: 1px solid #ced4da"
+                                  class="btn btn-light btn-sm text-muted"
+                                  type="button"
+                                  id="button-addon2"
+                                >
+                                  <i
+                                    ng-class="pass_attr=='password'?'fa fa-eye':'fa fa-eye-slash'"
+                                    aria-hidden="true"
+                                    class="fa fa-eye"
+                                  ></i>
+                                </button>
+                              </div>
+                            </div>
+
+                            <small
+                              id="passwordHelpBlock"
+                              class="form-text text-muted"
+                              >* Password is case sensitive</small
+                            >
+                          </div>
+                        </div>
+
+                        <div class="text-xs-center">
+                          <div
+                            class="g-recaptcha ng-pristine ng-untouched ng-valid ng-empty"
+                            vc-recaptcha=""
+                            key="'6LfMphgUAAAAAIljxOLUXxdah7778c-lEdhdCau8'"
+                            ng-model="gRecaptchaResponse"
+                            theme="light"
+                            on-success="recaptcha2.success_login(response)"
+                            style="
+                              margin-top: 10px;
+                              border: 0px solid #eee;
+                              text-align: center;
+                              margin-left: auto;
+                              margin-right: auto;
+                              transform: scale(1);
+                              -webkit-transform: scale(1);
+                              transform-origin: 0 0;
+                              display: inline-block;
+                              -webkit-transform-origin: 0 0;
+                            "
+                          >
+                            <div style="width: 304px; height: 78px">
+                              <div>
+                                <iframe
+                                  title="reCAPTCHA"
+                                  width="304"
+                                  height="78"
+                                  role="presentation"
+                                  name="a-4ygj0qaly71k"
+                                  frameborder="0"
+                                  scrolling="no"
+                                  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                  src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfMphgUAAAAAIljxOLUXxdah7778c-lEdhdCau8&amp;co=aHR0cHM6Ly9kaW9uZS5iYXRzdGF0ZS11LmVkdS5waDo0NDM.&amp;hl=en&amp;v=V6_85qpc2Xf2sbe3xTnRte7m&amp;theme=light&amp;size=normal&amp;cb=rouk0qef8c8a"
+                                ></iframe>
+                              </div>
+                              <textarea
+                                id="g-recaptcha-response"
+                                name="g-recaptcha-response"
+                                class="g-recaptcha-response"
+                                style="
+                                  width: 250px;
+                                  height: 40px;
+                                  border: 1px solid rgb(193, 193, 193);
+                                  margin: 10px 25px;
+                                  padding: 0px;
+                                  resize: none;
+                                  display: none;
+                                "
+                              ></textarea>
+                            </div>
+                            <iframe style="display: none"></iframe>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <!---->
+                          <div
+                            class="clearfix text-center"
+                            style="margin-top: 50px"
+                          >
+                            <button
+                              ng-click="authenticate()"
+                              style="width: 130px"
+                              ng-disabled="(
+                                                    $root.login.credentials.username.length==0 ||
+                                                    $root.login.credentials.password.length==0
+                                              ) || !recaptcha2.status_success_login "
+                              ng-disabledx="$root.login.credentials.username.length==0 || $root.login.credentials.password.length==0 "
+                              type="button"
+                              class="btn btn-success btn-sm pull-rightx rounded-pill shadow-sm btn-warning"
+                              ng-class="recaptcha2.status_success_login?'btn-success':'btn-warning' "
+                              disabled="disabled"
+                            >
+                              <i class="far fa-unlock"></i> Sign in
+                            </button>
+                          </div>
+                          <hr />
+                          <!--
+                                    <button class="btn btn-light text-success btn-sm" data-toggle="modal" data-target="#dlgActivate"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Activate Account</button>
+                                    -->
+
+                          <button
+                            class="btn btn-light text-success btn-sm"
+                            data-backdrop="static"
+                            data-toggle="modal"
+                            data-target="#dlgForgotPassword"
+                          >
+                            <i class="far fa-question-circle"></i> Forgot
+                            password? Click here
+                          </button>
+
+                          <button
+                            class="btn btn-light text-success btn-sm"
+                            data-backdrop="static"
+                            data-toggle="modal"
+                            data-target="#dlgEmailICT"
+                          >
+                            <i class="far fa-envelope"></i> Contact Us
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="dlgActivate"
+            class="modal fade"
+            tabindex="-1"
+            role="dialog"
+            style="margin-left: auto; margin-right: auto"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Account Activation</h4>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="alert alert-warning" role="alert">
+                    <i class="fas fa-wrench fa-2x align-middle"></i>
+                    <strong>UNDER CONSTRUCTION</strong>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-default"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+          </div>
+          <!-- /.modal -->
+
+          <div
+            id="dlgEmailICT"
+            class="modal fade"
+            tabindex="-1"
+            role="dialog"
+            style="margin-left: auto; margin-right: auto"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">ICT Services Email Addresses</h4>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    For any portal login concerns contact us through the
+                    following email addresses:
+                  </p>
+                  <table class="table table-sm table-bordered table-striped">
+                    <tbody>
+                      <tr class="bg-light" style="border: 1px">
+                        <td class="text-center">
+                          <i class="far fa-building fa-lg text-muted"></i>
+                        </td>
+                        <!--<td class="text-center"><i class="far fa-phone-office fa-lg  text-muted"></i></td>-->
+                        <td class="text-center">
+                          <i class="far fa-envelope fa-lg text-muted"></i>
+                        </td>
+                      </tr>
+                      <!--
+        <tr>
+            <td class="text-center">Central</td>
+            <td class="text-center">ict.central@g.batstate-u.edu.ph</td>
+        </tr>
+        -->
+
+                      <tr>
+                        <td class="text-center">Pablo Borbon</td>
+                        <td class="text-center">ict.pb@g.batstate-u.edu.ph</td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Alangilan</td>
+
+                        <td class="text-center">
+                          ict.alangilan@g.batstate-u.edu.ph
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Malvar</td>
+
+                        <td class="text-center">
+                          ict.malvar@g.batstate-u.edu.ph
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Nasugbu</td>
+
+                        <td class="text-center">
+                          ict.nasugbu@g.batstate-u.edu.ph
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Lipa</td>
+
+                        <td class="text-center">
+                          ict.lipa@g.batstate-u.edu.ph
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Balayan</td>
+
+                        <td class="text-center">
+                          ict.balayan@g.batstate-u.edu.ph
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Lemery</td>
+
+                        <td class="text-center">
+                          ict.lemery@g.batstate-u.edu.ph
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">San Juan</td>
+
+                        <td class="text-center">
+                          ict.sanjuan@g.batstate-u.edu.ph
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Rosario</td>
+
+                        <td class="text-center">
+                          ict.rosario@g.batstate-u.edu.ph
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Lobo</td>
+
+                        <td class="text-center">
+                          ict.lobo@g.batstate-u.edu.ph
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="dlgForgotPassword"
+            class="modal fade"
+            tabindex="-1"
+            role="dialog"
+            style="margin-left: auto; margin-right: auto"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Forgot Password</h4>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!--
+<div class="alert alert-warning text-center" role="alert">
+     <strong>*** UNDER CONSTRUCTION ***</strong>
+</div>
+-->
+
+                  <div
+                    class="card shadow-sm"
+                    style="
+                      margin-top: 20px;
+                      margin-left: auto;
+                      margin-right: auto;
+                      max-width: 800px;
+                    "
+                  >
+                    <div class="card-body">
+                      <!-- 11/3/2023 -->
+                      <div
+                        class="alert alert-warning border-warningx border-0"
+                        role="alert"
+                      >
+                        <div class="row">
+                          <div class="col-2 text-center align-middle">
+                            <i
+                              class="far fa-exclamation-triangle fa-4x text-warning"
+                            ></i>
+                          </div>
+                          <div class="col-10">
+                            Gmail users may be experiencing issues receiving
+                            emails from our domain. We understand the
+                            significance of smooth communication, and we are
+                            actively working to address this matter.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--<h5 class="card-title">Password Recovery</h5>-->
+                      <p class="card-text">
+                        Enter your registered email address below. An email will
+                        be sent to this address for password reset confirmation
+                      </p>
+                      <form
+                        class="ng-pristine ng-valid-email ng-invalid ng-invalid-required"
+                      >
+                        <div class="form-group">
+                          <input
+                            ng-model="recover.data.email"
+                            type="email"
+                            class="form-control ng-pristine ng-untouched ng-empty ng-valid-email ng-invalid ng-invalid-required"
+                            id="txtemail"
+                            placeholder="Email address"
+                            required=""
+                          />
+                        </div>
+
+                        <div class="alert alert-light" role="alert">
+                          * If you do not receive the email shortly after the
+                          submission, please check your Spam folder.
+                        </div>
+                        <button
+                          style="width: 120px"
+                          ng-disabled="!(recover.data.email.length>0)"
+                          ng-click="recover.submit()"
+                          class="btn btn-success btn-sm rounded-pill pull-right shadow-sm"
+                          disabled="disabled"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-default"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+          </div>
+          <!-- /.modal -->
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(204, 204, 204);
+        box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+        position: absolute;
+        transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2000000000;
+        left: 0px;
+        top: -10000px;
+      "
+    >
+      <div
+        style="
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          z-index: 2000000000;
+          background-color: rgb(255, 255, 255);
+          opacity: 0.05;
+        "
+      ></div>
+      <div
+        class="g-recaptcha-bubble-arrow"
+        style="
+          border: 11px solid transparent;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          pointer-events: none;
+          margin-top: -11px;
+          z-index: 2000000000;
+        "
+      ></div>
+      <div
+        class="g-recaptcha-bubble-arrow"
+        style="
+          border: 10px solid transparent;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          pointer-events: none;
+          margin-top: -10px;
+          z-index: 2000000000;
+        "
+      ></div>
+      <div style="z-index: 2000000000; position: relative">
+        <iframe
+          title="recaptcha challenge expires in two minutes"
+          name="c-4ygj0qaly71k"
+          frameborder="0"
+          scrolling="no"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+          src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=V6_85qpc2Xf2sbe3xTnRte7m&amp;k=6LfMphgUAAAAAIljxOLUXxdah7778c-lEdhdCau8"
+          style="width: 100%; height: 100%"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon" />
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link
+  href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+  rel="stylesheet"
+/>
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link
+  href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+<link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+<link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet" />
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/chart.js/chart.umd.js"></script>
+<script src="assets/vendor/echarts/echarts.min.js"></script>
+<script src="assets/vendor/quill/quill.min.js"></script>
+<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+<script src="assets/vendor/tinymce/tinymce.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
