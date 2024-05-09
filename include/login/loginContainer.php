@@ -4,7 +4,7 @@
         style="background-color: #ffffff"
       >
         <div class="col-8 border m-5 p-4">
-          <p class="h5 arial pb-0">Please Login</p>
+          <p class="h5 pb-0" style="font-family: Arial Narrow; color: #000000;">Please Login</p>
           <div class="d-flex justify-content-center">
             <hr class="mt-0" style="width: 100%" />
           </div>
